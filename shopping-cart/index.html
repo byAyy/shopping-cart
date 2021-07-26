@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h2>Shopping Cart</h2>
+    <div class="container">
+
+        <div class="product-1" id="product-1">
+            <img src="/images/1.png" alt="" class="product firstTee">
+            <img src="/images/heart.svg" alt="" class="heart" id="heart" onclick="redBtn(this)">
+            <h2><span id="price-1">7</span>BD</h2>
+            <div class="quantity">
+                    <button class="plus" id="inc-1"><img src="/images/plus.svg" alt="" style="height: 20px;" onclick="increase(this)"></button>
+                    <input type="text" placeholder="qunatity" id="quantity-1" value="0" class="input">
+                    <button class="minus" id="dec-1"><img src="/images/minus.svg" alt="" style="height: 20px;" onclick="decrease(this)"></button>
+            </div>
+        </div>
+
+        <div class="product-2" id="product-2">
+            <img src="/images/2.png" alt="" class="product secondTee">
+            <img src="/images/heart.svg" alt="" class="heart" id="heart" onclick="redBtn(this)">
+            <h2><span id="price-2">8</span>BD</h2>
+            <div class="quantity">
+                <button class="plus" id="inc-2"><img src="/images/plus.svg" alt="" style="height: 20px;" onclick="increase(this)""></button>
+                <input type="text" placeholder="qunatity" id="quantity-2" class="input">
+                <button class="minus" id="dec-2"><img src="/images/minus.svg" alt="" style="height: 20px;" onclick="decrease(this)"></button>
+        </div>
+        </div>
+
+        <div class="product-3" id="product-3">
+            <img src="/images/3.png" alt="" class="product thirdTee">
+            <img src="/images/heart.svg" alt="" class="heart" id="heart" onclick="redBtn(this)">
+            <h2><span id="price-3">9</span>BD</h2>
+            <div class="quantity">
+                <button class="plus" id="inc-3"><img src="/images/plus.svg" alt="" style="height: 20px;" onclick="increase(this)""></button>
+                <input type="text" placeholder="qunatity" id="quantity-3" class="input">
+                <button class="minus" id="dec-3"><img src="/images/minus.svg" alt="" style="height: 20px;" onclick="decrease(this)"></button>
+        </div>
+        </div>
+    </div>
+
+    <div class="total-container">
+        <label for="total">Total price :</label>
+        <input type="text" name="total" id="total" value="0 BD" class="inp" disabled>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
